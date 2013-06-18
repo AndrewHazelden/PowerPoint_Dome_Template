@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>readme.md</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body{
+    margin: 0 auto;
+    font-family: Georgia, Palatino, serif;
+    color: #444444;
+    line-height: 1;
+    max-width: 960px;
+    padding: 5px;
+}
+h1, h2, h3, h4 {
+    color: #111111;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 16px;
+    padding: 0;
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 22px;
+    margin: 20px 0 6px;
+}
+h3 {
+    font-size: 21px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+a {
+    color: #0099ff;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a:hover {
+    text-decoration: none;
+    color: #ff6600;
+}
+a:visited {
+    color: purple;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    line-height: 24px;
+    margin-left: 44px;
+}
+li ul, li ul {
+    margin-left: 24px;
+}
+p, ul, ol {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 540px;
+}
+pre {
+    padding: 0px 24px;
+    max-width: 800px;
+    white-space: pre-wrap;
+}
+code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+}
+aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+blockquote {
+    border-left:.5em solid #eee;
+    padding: 0 2em;
+    margin-left:0;
+    max-width: 476px;
+}
+blockquote  cite {
+    font-size:14px;
+    line-height:20px;
+    color:#bfbfbf;
+}
+blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
+blockquote p {  
+    color: #666;
+    max-width: 460px;
+}
+hr {
+    width: 540px;
+    text-align: left;
+    margin: 0 auto 0 0;
+    color: #999;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+}
+/* override default chrome & firefox settings */
+input:not([type="image"]), textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+label,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+input[type=text],
+input[type=password],
+textarea,
+select {
+  display: inline-block;
+  width: 210px;
+  padding: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  height: 18px;
+  color: #808080;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+select, input[type=file] {
+  height: 27px;
+  line-height: 27px;
+}
+textarea {
+  height: auto;
+}
+
+/* grey out placeholders */
+:-moz-placeholder {
+  color: #bfbfbf;
+}
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+input[type=text],
+input[type=password],
+select,
+textarea {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  outline: none;
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+/* buttons */
+button {
+  display: inline-block;
+  padding: 4px 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #0064cd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
+  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
+  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
+  background-image: linear-gradient(top, #049cdb, #0064cd);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #004b9a;
+  border-bottom-color: #003f81;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+  border-color: #0064cd #0064cd #003f81;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+button:hover {
+  color: #fff;
+  background-position: 0 -15px;
+  text-decoration: none;
+}
+button:active {
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* CSS stylesheet is based on Kevin Burke's Markdown.css project (http://kevinburke.bitbucket.org/markdowncss) */
+</style>
+</head>
+<body>
+<h1>PowerPoint Dome Template</h1>
+
+<p><strong>Version 1.0</strong> - Released June 10, 2013<br />
+by Andrew Hazelden</p>
+
+<p><img src="Notes/Screenshots/domemaster_slide.jpg" alt="PowerPoint Dome Template Screenshot" /></p>
+
+<h2>About the Software</h2>
+
+<p>The PowerPoint Dome Template provides a simple and effective way to create fulldome formatted presentations. The PowerPoint template comes with 14 "dome optimized" slide layouts. You can use the template file with Microsoft PowerPoint, Google Docs, and LibreOffice.</p>
+
+<p>The PowerPoint template file is a 2:1 aspect ratio document that covers a 360 degree x 90 degree field of view. If your dome projection system allows you to display panoramic imagery directly you can use the Powerpoint generated .PNG or .JPG slides without any extra image processing. </p>
+
+<p><img src="Notes/Screenshots/powerpoint_dome_template_960px.png" alt="PowerPoint Dome Template Screenshot" /></p>
+
+<h1>Exporting PowerPoint Slides</h1>
+
+<p>You can use PowerPoint to export your presentation to a series of JPG or PNG slides.</p>
+
+<h2>Step 1. Export the Slides</h2>
+
+<p>Start by selecting the Export menu item.</p>
+
+<h2>Step 2. Choose a File Type</h2>
+
+<p>Click on the "Change File Type" menu item and select either the PNG or JPEG option.</p>
+
+<p><img src="Notes/Screenshots/export_png_images_of_the_slides.png" alt="Export the Slides to a file" /></p>
+
+<h2>Step 3. Save the Slides to a Folder</h2>
+
+<p>Click the Save As button to export your slides. PowerPoint will ask you to select an output directory for the images.</p>
+
+<p><img src="Notes/Screenshots/save_the_slides_to_a_folder.png" alt="Save the slides to your hard disk" /></p>
+
+<h2>Step 4. Choose What Slides to Export</h2>
+
+<p>To export all of the slides in your presentation choose the "All Slides" button during the save process.</p>
+
+<p><img src="Notes/Screenshots/export_all_of_the_slides.png" alt="Export All of the Slides" /></p>
+
+<hr />
+
+<h1>Maximizing the Export Resolution</h1>
+
+<p>It is possible to boost the maximum PowerPoint slide export resolution using the Windows Registry Editor. You can read the guide on the <a href="http://support.microsoft.com/kb/827745?wa=wsignin1.0">Microsoft support site: How to change the resolution of a slide that you export as a picture in PowerPoint</a>.</p>
+
+<p><img src="Notes/Screenshots/changing_the_export_resolution.png" alt="Boosting the Export Resolution" /></p>
+
+<h2>PowerPoint Video Export</h2>
+
+<p>Microsoft's PowerPoint 2013 software allows you to export your presentation to a 1440x720 resolution MPEG4 video file. The PowerPoint video export feature can export your PowerPoint shows to a video file with custom slide timing, animated transitions, and audio narrations.</p>
+
+<p>To export your PowerPoint dome presentation to a video file, open the Export screen and choose "Create a Video". Selecting the "Computer &amp; HD Displays" option will enable the 1440x720p video format.</p>
+
+<p><img src="Notes/Screenshots/powerpoint_create_video.png" alt="PowerPoint Video Export" /></p>
+
+<hr />
+
+<h1>Photoshop Action Installation</h1>
+
+<p>The PowerPoint Dome Template comes with a bonus Photoshop action and droplet program for converting your PowerPoint exported .PNG or .JPG slides into angular fisheye formatted "domemaster" images.</p>
+
+<p><img src="Notes/Screenshots/photoshop_conversion_tools.png" alt="Photoshop Conversion Tools" /></p>
+
+<h1>Droplet Usage</h1>
+
+<p>If you have Adobe Photoshop installed on your system you can use the included droplet program called "PowerPoint to Domemaster Convert.exe" that is located in the "Conversion tools" folder. The "PowerPoint to Domemaster Convert.exe" program is run by dragging either a single image or a folder of .PNG or .JPG images onto the program icon. The droplet will start Adobe Photoshop and begin processing the images.</p>
+
+<p>The droplet starts with the PowerPoint exported slides in either PNG or JPEG format.
+<img src="Notes/Screenshots/droplet_input_slides.png" alt="The droplet starts with rectangular images." /></p>
+
+<p>After the images are run throught the droplet they are converted to angular fisheye formatted domemaster images.<br />
+<img src="Notes/Screenshots/droplet_output_domemaster_slides.png" alt="The droplet starts with rectangular images." /></p>
+
+<h2>Droplet Note:</h2>
+
+<p>You should always run the droplet on a copy of your PowerPoint images because the droplet works by converting the original images into the domemaster projection and then saves the result by overwriting the original file.</p>
+
+<h1>Photoshop Actions Installation</h1>
+
+<h2>Step 1. Open the Actions Tab</h2>
+
+<p>Start by opening Adobe Photoshop. Navigate to the "Window" menu, and select the "Actions" menu item.</p>
+
+<p><img src="Notes/Screenshots/photoshop_actions_menu.png" alt="Open the Actions Tab" /></p>
+
+<h2>Step 2. Load the actions.</h2>
+
+<p>Click on the Actions tab pop-up menu located at the top right of the actions tab.</p>
+
+<p>Select the "Load Actions" menu item to import the actions file.</p>
+
+<p>In the Load dialogue window open the folder named "Conversion Tools" and select the action files "PowerPoint Dome Conversions.atn".</p>
+
+<p>Click the Load button to open the action files. The new action will be loaded into the Actions Tab.</p>
+
+<p><img src="Notes/Screenshots/photoshop_conversion_actions.png" alt="Conversion Actions" /></p>
+
+<h2>Step 3. Switch to Button Mode</h2>
+
+<p>If you want to make it easier to run the actions you can switch the Actions tab to "Button Mode". This will make each action item a clickable button.</p>
+
+<p>Click on the actions tab pop-up menu located at the top right of the actions tab.</p>
+
+<p>Select the first item in the menu labeled "Button Mode". Your view will switch from a long list into a colourful grid of labeled buttons.</p>
+
+<p><img src="Notes/Screenshots/photoshop_conversion_actions_as_buttons.png" alt="Photoshop Actions Tab" /></p>
+
+<p>To make it easier to find things, the "PowerPoint Dome Conversions" actions are coloured blue. </p>
+
+<p>You now have two actions to choose from:</p>
+
+<blockquote>
+  <p>PowerPoint to Domemaster<br />
+  Domemaster to PowerPoint</p>
+</blockquote>
+
+<h1>Photoshop Action Results</h1>
+
+<p>Here are two screenshots that show the results of running the PowerPoint Dome Conversions actions in Photoshop.</p>
+
+<p>PowerPoint Exported Slide:<br />
+<img src="Notes/Screenshots/photoshop_powerpoint_conversion.png" alt="PowerPoint Slide" /></p>
+
+<p>Domemaster Converted Slide:<br />
+<img src="Notes/Screenshots/photoshop_domemaster_conversion.png" alt="PowerPoint to Domemaster Conversion result" /></p>
+
+<hr />
+
+<p>PowerPoint Dome Template Created by Andrew Hazelden. (c) copyright 2013.</p>
+
+<p>Email: <a href="mailto:andrew@andrewhazelden.com">andrew@andrewhazelden.com</a></p>
+
+<p>Blog: <a href="http://www.andrewhazelden.com">http://www.andrewhazelden.com</a></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
