@@ -9,7 +9,9 @@ About the Software
 -----------------
 The PowerPoint Dome Template provides a simple and effective way to create fulldome formatted presentations. The PowerPoint template comes with 14 "dome optimized" slide layouts. You can use the template file with Microsoft PowerPoint, Google Docs, and LibreOffice.
 
-The PowerPoint template file is a 2:1 aspect ratio document that covers a 360 degree x 90 degree field of view. If your dome projection system allows you to display panoramic imagery directly you can use the Powerpoint generated .PNG or .JPG slides without any extra image processing. 
+The PowerPoint template file is a 2:1 aspect ratio document that covers a 360 degree x 90 degree field of view. If your dome projection system allows you to display panoramic imagery directly you can use the Powerpoint generated .PNG or .JPG slides without any extra image processing.
+
+The software is available as a free download. If you find the Dome template useful you are encouraged to consider a small donation to promote further development, and pay bandwidth costs.
 
 ![PowerPoint Dome Template Screenshot](Notes/Screenshots/powerpoint_dome_template_960px.png)
 
