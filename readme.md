@@ -1,5 +1,5 @@
 #PowerPoint Dome Template
-**Version 1.0** - Released June 10, 2013  
+**Version 1.1** - Released Feb 13, 2013  
 by Andrew Hazelden
 
 ![PowerPoint Dome Template Screenshot](Notes/Screenshots/domemaster_slide.jpg)
@@ -66,6 +66,8 @@ The PowerPoint Dome Template comes with a bonus Photoshop action and droplet pro
 
 If you have Adobe Photoshop installed on your system you can use the included droplet program called "PowerPoint to Domemaster Convert.exe" that is located in the "Conversion tools" folder. The "PowerPoint to Domemaster Convert.exe" program is run by dragging either a single image or a folder of .PNG or .JPG images onto the program icon. The droplet will start Adobe Photoshop and begin processing the images.
 
+**Droplet Tip:** If you have multiple version of Photoshop installed on your system, it is a good idea to start your preferred version of Photoshop first, before you run the droplet. This will tell the droplet to use the active copy of photoshop to process your fulldome imagery.
+
 The droplet starts with the PowerPoint exported slides in either PNG or JPEG format.
 ![The droplet starts with rectangular images.](Notes/Screenshots/droplet_input_slides.png)
 
@@ -122,11 +124,36 @@ PowerPoint Exported Slide:
 Domemaster Converted Slide:  
 ![PowerPoint to Domemaster Conversion result](Notes/Screenshots/photoshop_domemaster_conversion.png)
 
+## Creating a Droplet ##
 
+The updated PowerPoint Dome Template now includes a Mac CS6, and Windows CS2 and CS6 droplets. Here is a tip on creating your own conversion droplet if you are using a different version of Photoshop.
+
+**Step 1.** Follow the instructions in the "Photoshop Actions Installation" section and load the action file "PowerPoint Dome Conversions.atn" into your copy of Photoshop.
+
+**Step 2.** From the File menu, select Automate > Create Droplet...
+
+![Select the Create Droplet menu item](Notes\Screenshots\create-droplet-menu.png)
+
+**Step 3.** The Create Droplet window will open. Click the **Choose...** button to pick a folder location where the droplet will be save. Give the droplet a name like "PowerPoint to Domemaster Convert".
+
+![Choose the Powerpoint to Dome action](Notes\Screenshots\save-droplet.png)
+
+In the **Play** section of the Create Droplet window open the **Set:** popup menu and chose "PowerPoint Dome Conversions". This set is only listed here if you installed the actions file "PowerPoint Dome Conversions.atn" mentioned in step 1.
+
+In the **Action:** Popup menu select "PowerPoint to Domemaster". This will tell the droplet to run the custom action that creates a domemaster formatted image when the droplet is started.
+
+Enable the **Suppress File Open Options Dialogs** and **Suppress Color Profile Warnings** checkboxes so you don't have to click through lots of open dialog messages when you run the droplet.
+
+Set the Destination to **Save And Close**. This will tell the droplet to save the converted imagery over the original file.
+
+
+Click the "OK" button to create the new droplet.
+
+You now have a custom droplet that was created to match your exact version of Photoshop.
 
 ------------------------------------------------------
 
-PowerPoint Dome Template Created by Andrew Hazelden. (c) copyright 2013.
+PowerPoint Dome Template Created by Andrew Hazelden. (c) copyright 2013-2014.
 
 Email: [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com)
 

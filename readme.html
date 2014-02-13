@@ -1,407 +1,364 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<title>readme.md</title>
+<title>readme</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
-body{
-    margin: 0 auto;
-    font-family: Georgia, Palatino, serif;
-    color: #444444;
-    line-height: 1;
-    max-width: 960px;
-    padding: 5px;
-}
-h1, h2, h3, h4 {
-    color: #111111;
-    font-weight: 400;
-}
-h1, h2, h3, h4, h5, p {
-    margin-bottom: 16px;
-    padding: 0;
-}
-h1 {
-    font-size: 28px;
-}
-h2 {
-    font-size: 22px;
-    margin: 20px 0 6px;
-}
-h3 {
-    font-size: 21px;
-}
-h4 {
-    font-size: 18px;
-}
-h5 {
-    font-size: 16px;
-}
-a {
-    color: #0099ff;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-}
-a:hover {
-    text-decoration: none;
-    color: #ff6600;
-}
-a:visited {
-    color: purple;
-}
-ul, ol {
-    padding: 0;
-    margin: 0;
-}
-li {
-    line-height: 24px;
-    margin-left: 44px;
-}
-li ul, li ul {
-    margin-left: 24px;
-}
-p, ul, ol {
-    font-size: 14px;
-    line-height: 20px;
-    max-width: 540px;
-}
-pre {
-    padding: 0px 24px;
-    max-width: 800px;
-    white-space: pre-wrap;
-}
-code {
-    font-family: Consolas, Monaco, Andale Mono, monospace;
-    line-height: 1.5;
-    font-size: 13px;
-}
-aside {
-    display: block;
-    float: right;
-    width: 390px;
-}
-blockquote {
-    border-left:.5em solid #eee;
-    padding: 0 2em;
-    margin-left:0;
-    max-width: 476px;
-}
-blockquote  cite {
-    font-size:14px;
-    line-height:20px;
-    color:#bfbfbf;
-}
-blockquote cite:before {
-    content: '\2014 \00A0';
-}
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: 29d1c5bc36da364ad5aa86946d420b7bbc54a253 */
+/* Source: https://github.com/nicolahery/markdownpad-github */
 
-blockquote p {  
-    color: #666;
-    max-width: 460px;
-}
-hr {
-    width: 540px;
-    text-align: left;
-    margin: 0 auto 0 0;
-    color: #999;
-}
+/* RESET
+=============================================================================*/
 
-button,
-input,
-select,
-textarea {
-  font-size: 100%;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
-  vertical-align: baseline;
-  *vertical-align: middle;
-}
-button, input {
-  line-height: normal;
-  *overflow: visible;
-}
-button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
   padding: 0;
-}
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: button;
-}
-input[type=checkbox], input[type=radio] {
-  cursor: pointer;
-}
-/* override default chrome & firefox settings */
-input:not([type="image"]), textarea {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+  border: 0;
 }
 
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-label,
-input,
-select,
-textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: normal;
-  margin-bottom: 18px;
-}
-input[type=checkbox], input[type=radio] {
-  cursor: pointer;
-  margin-bottom: 0;
-}
-input[type=text],
-input[type=password],
-textarea,
-select {
-  display: inline-block;
-  width: 210px;
-  padding: 4px;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 18px;
-  height: 18px;
-  color: #808080;
-  border: 1px solid #ccc;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-select, input[type=file] {
-  height: 27px;
-  line-height: 27px;
-}
-textarea {
-  height: auto;
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-/* grey out placeholders */
-:-moz-placeholder {
-  color: #bfbfbf;
-}
-::-webkit-input-placeholder {
-  color: #bfbfbf;
+body>*:first-child {
+  margin-top: 0 !important;
 }
 
-input[type=text],
-input[type=password],
-select,
-textarea {
-  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-  transition: border linear 0.2s, box-shadow linear 0.2s;
-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-input[type=text]:focus, input[type=password]:focus, textarea:focus {
-  outline: none;
-  border-color: rgba(82, 168, 236, 0.8);
-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+body>*:last-child {
+  margin-bottom: 0 !important;
 }
 
-/* buttons */
-button {
-  display: inline-block;
-  padding: 4px 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  background-color: #0064cd;
-  background-repeat: repeat-x;
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
-  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
-  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
-  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
-  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
-  background-image: linear-gradient(top, #049cdb, #0064cd);
-  color: #fff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  border: 1px solid #004b9a;
-  border-bottom-color: #003f81;
-  -webkit-transition: 0.1s linear all;
-  -moz-transition: 0.1s linear all;
-  transition: 0.1s linear all;
-  border-color: #0064cd #0064cd #003f81;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
 }
-button:hover {
-  color: #fff;
-  background-position: 0 -15px;
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
   text-decoration: none;
 }
-button:active {
-  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
+
+a:hover {
+  text-decoration: underline;
 }
 
-/* CSS stylesheet is based on Kevin Burke's Markdown.css project (http://kevinburke.bitbucket.org/markdowncss) */
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
 </style>
 </head>
 <body>
 <h1>PowerPoint Dome Template</h1>
-
-<p><strong>Version 1.0</strong> - Released June 10, 2013<br />
+<p><strong>Version 1.1</strong> - Released Feb 13, 2013<br />
 by Andrew Hazelden</p>
-
 <p><img src="Notes/Screenshots/domemaster_slide.jpg" alt="PowerPoint Dome Template Screenshot" /></p>
-
 <h2>About the Software</h2>
-
-<p>The PowerPoint Dome Template provides a simple and effective way to create fulldome formatted presentations. The PowerPoint template comes with 14 "dome optimized" slide layouts. You can use the template file with Microsoft PowerPoint, Google Docs, and LibreOffice.</p>
-
-<p>The PowerPoint template file is a 2:1 aspect ratio document that covers a 360 degree x 90 degree field of view. If your dome projection system allows you to display panoramic imagery directly you can use the Powerpoint generated .PNG or .JPG slides without any extra image processing. </p>
-
+<p>The PowerPoint Dome Template provides a simple and effective way to create fulldome formatted presentations. The PowerPoint template comes with 14 &quot;dome optimized&quot; slide layouts. You can use the template file with Microsoft PowerPoint, Google Docs, and LibreOffice.</p>
+<p>The PowerPoint template file is a 2:1 aspect ratio document that covers a 360 degree x 90 degree field of view. If your dome projection system allows you to display panoramic imagery directly you can use the Powerpoint generated .PNG or .JPG slides without any extra image processing.</p>
 <p>The software is available as a free download. If you find the Dome template useful you are encouraged to consider a small donation to promote further development, and pay bandwidth costs.</p>
-
 <p><img src="Notes/Screenshots/powerpoint_dome_template_960px.png" alt="PowerPoint Dome Template Screenshot" /></p>
-
 <h1>Exporting PowerPoint Slides</h1>
-
 <p>You can use PowerPoint to export your presentation to a series of JPG or PNG slides.</p>
-
 <h2>Step 1. Export the Slides</h2>
-
 <p>Start by selecting the Export menu item.</p>
-
 <h2>Step 2. Choose a File Type</h2>
-
-<p>Click on the "Change File Type" menu item and select either the PNG or JPEG option.</p>
-
+<p>Click on the &quot;Change File Type&quot; menu item and select either the PNG or JPEG option.</p>
 <p><img src="Notes/Screenshots/export_png_images_of_the_slides.png" alt="Export the Slides to a file" /></p>
-
 <h2>Step 3. Save the Slides to a Folder</h2>
-
 <p>Click the Save As button to export your slides. PowerPoint will ask you to select an output directory for the images.</p>
-
 <p><img src="Notes/Screenshots/save_the_slides_to_a_folder.png" alt="Save the slides to your hard disk" /></p>
-
 <h2>Step 4. Choose What Slides to Export</h2>
-
-<p>To export all of the slides in your presentation choose the "All Slides" button during the save process.</p>
-
+<p>To export all of the slides in your presentation choose the &quot;All Slides&quot; button during the save process.</p>
 <p><img src="Notes/Screenshots/export_all_of_the_slides.png" alt="Export All of the Slides" /></p>
-
 <hr />
-
 <h1>Maximizing the Export Resolution</h1>
-
 <p>It is possible to boost the maximum PowerPoint slide export resolution using the Windows Registry Editor. You can read the guide on the <a href="http://support.microsoft.com/kb/827745?wa=wsignin1.0">Microsoft support site: How to change the resolution of a slide that you export as a picture in PowerPoint</a>.</p>
-
 <p><img src="Notes/Screenshots/changing_the_export_resolution.png" alt="Boosting the Export Resolution" /></p>
-
 <h2>PowerPoint Video Export</h2>
-
 <p>Microsoft's PowerPoint 2013 software allows you to export your presentation to a 1440x720 resolution MPEG4 video file. The PowerPoint video export feature can export your PowerPoint shows to a video file with custom slide timing, animated transitions, and audio narrations.</p>
-
-<p>To export your PowerPoint dome presentation to a video file, open the Export screen and choose "Create a Video". Selecting the "Computer &amp; HD Displays" option will enable the 1440x720p video format.</p>
-
+<p>To export your PowerPoint dome presentation to a video file, open the Export screen and choose &quot;Create a Video&quot;. Selecting the &quot;Computer &amp; HD Displays&quot; option will enable the 1440x720p video format.</p>
 <p><img src="Notes/Screenshots/powerpoint_create_video.png" alt="PowerPoint Video Export" /></p>
-
 <hr />
-
 <h1>Photoshop Action Installation</h1>
-
-<p>The PowerPoint Dome Template comes with a bonus Photoshop action and droplet program for converting your PowerPoint exported .PNG or .JPG slides into angular fisheye formatted "domemaster" images.</p>
-
+<p>The PowerPoint Dome Template comes with a bonus Photoshop action and droplet program for converting your PowerPoint exported .PNG or .JPG slides into angular fisheye formatted &quot;domemaster&quot; images.</p>
 <p><img src="Notes/Screenshots/photoshop_conversion_tools.png" alt="Photoshop Conversion Tools" /></p>
-
 <h1>Droplet Usage</h1>
-
-<p>If you have Adobe Photoshop installed on your system you can use the included droplet program called "PowerPoint to Domemaster Convert.exe" that is located in the "Conversion tools" folder. The "PowerPoint to Domemaster Convert.exe" program is run by dragging either a single image or a folder of .PNG or .JPG images onto the program icon. The droplet will start Adobe Photoshop and begin processing the images.</p>
-
+<p>If you have Adobe Photoshop installed on your system you can use the included droplet program called &quot;PowerPoint to Domemaster Convert.exe&quot; that is located in the &quot;Conversion tools&quot; folder. The &quot;PowerPoint to Domemaster Convert.exe&quot; program is run by dragging either a single image or a folder of .PNG or .JPG images onto the program icon. The droplet will start Adobe Photoshop and begin processing the images.</p>
+<p><strong>Droplet Tip:</strong> If you have multiple version of Photoshop installed on your system, it is a good idea to start your preferred version of Photoshop first, before you run the droplet. This will tell the droplet to use the active copy of photoshop to process your fulldome imagery.</p>
 <p>The droplet starts with the PowerPoint exported slides in either PNG or JPEG format.
 <img src="Notes/Screenshots/droplet_input_slides.png" alt="The droplet starts with rectangular images." /></p>
-
 <p>After the images are run throught the droplet they are converted to angular fisheye formatted domemaster images.<br />
 <img src="Notes/Screenshots/droplet_output_domemaster_slides.png" alt="The droplet starts with rectangular images." /></p>
-
 <h2>Droplet Note:</h2>
-
 <p>You should always run the droplet on a copy of your PowerPoint images because the droplet works by converting the original images into the domemaster projection and then saves the result by overwriting the original file.</p>
-
 <h1>Photoshop Actions Installation</h1>
-
 <h2>Step 1. Open the Actions Tab</h2>
-
-<p>Start by opening Adobe Photoshop. Navigate to the "Window" menu, and select the "Actions" menu item.</p>
-
+<p>Start by opening Adobe Photoshop. Navigate to the &quot;Window&quot; menu, and select the &quot;Actions&quot; menu item.</p>
 <p><img src="Notes/Screenshots/photoshop_actions_menu.png" alt="Open the Actions Tab" /></p>
-
 <h2>Step 2. Load the actions.</h2>
-
 <p>Click on the Actions tab pop-up menu located at the top right of the actions tab.</p>
-
-<p>Select the "Load Actions" menu item to import the actions file.</p>
-
-<p>In the Load dialogue window open the folder named "Conversion Tools" and select the action files "PowerPoint Dome Conversions.atn".</p>
-
+<p>Select the &quot;Load Actions&quot; menu item to import the actions file.</p>
+<p>In the Load dialogue window open the folder named &quot;Conversion Tools&quot; and select the action files &quot;PowerPoint Dome Conversions.atn&quot;.</p>
 <p>Click the Load button to open the action files. The new action will be loaded into the Actions Tab.</p>
-
 <p><img src="Notes/Screenshots/photoshop_conversion_actions.png" alt="Conversion Actions" /></p>
-
 <h2>Step 3. Switch to Button Mode</h2>
-
-<p>If you want to make it easier to run the actions you can switch the Actions tab to "Button Mode". This will make each action item a clickable button.</p>
-
+<p>If you want to make it easier to run the actions you can switch the Actions tab to &quot;Button Mode&quot;. This will make each action item a clickable button.</p>
 <p>Click on the actions tab pop-up menu located at the top right of the actions tab.</p>
-
-<p>Select the first item in the menu labeled "Button Mode". Your view will switch from a long list into a colourful grid of labeled buttons.</p>
-
+<p>Select the first item in the menu labeled &quot;Button Mode&quot;. Your view will switch from a long list into a colourful grid of labeled buttons.</p>
 <p><img src="Notes/Screenshots/photoshop_conversion_actions_as_buttons.png" alt="Photoshop Actions Tab" /></p>
-
-<p>To make it easier to find things, the "PowerPoint Dome Conversions" actions are coloured blue. </p>
-
+<p>To make it easier to find things, the &quot;PowerPoint Dome Conversions&quot; actions are coloured blue. </p>
 <p>You now have two actions to choose from:</p>
-
 <blockquote>
-  <p>PowerPoint to Domemaster<br />
-  Domemaster to PowerPoint</p>
+<p>PowerPoint to Domemaster<br />
+Domemaster to PowerPoint</p>
 </blockquote>
-
 <h1>Photoshop Action Results</h1>
-
 <p>Here are two screenshots that show the results of running the PowerPoint Dome Conversions actions in Photoshop.</p>
-
 <p>PowerPoint Exported Slide:<br />
 <img src="Notes/Screenshots/photoshop_powerpoint_conversion.png" alt="PowerPoint Slide" /></p>
-
 <p>Domemaster Converted Slide:<br />
 <img src="Notes/Screenshots/photoshop_domemaster_conversion.png" alt="PowerPoint to Domemaster Conversion result" /></p>
-
+<h2>Creating a Droplet</h2>
+<p>The updated PowerPoint Dome Template now includes a Mac CS6, and Windows CS2 and CS6 droplets. Here is a tip on creating your own conversion droplet if you are using a different version of Photoshop.</p>
+<p><strong>Step 1.</strong> Follow the instructions in the &quot;Photoshop Actions Installation&quot; section and load the action file &quot;PowerPoint Dome Conversions.atn&quot; into your copy of Photoshop.</p>
+<p><strong>Step 2.</strong> From the File menu, select Automate &gt; Create Droplet...</p>
+<p><img src="Notes\Screenshots\create-droplet-menu.png" alt="Select the Create Droplet menu item" /></p>
+<p><strong>Step 3.</strong> The Create Droplet window will open. Click the <strong>Choose...</strong> button to pick a folder location where the droplet will be save. Give the droplet a name like &quot;PowerPoint to Domemaster Convert&quot;.</p>
+<p><img src="Notes\Screenshots\save-droplet.png" alt="Choose the Powerpoint to Dome action" /></p>
+<p>In the <strong>Play</strong> section of the Create Droplet window open the <strong>Set:</strong> popup menu and chose &quot;PowerPoint Dome Conversions&quot;. This set is only listed here if you installed the actions file &quot;PowerPoint Dome Conversions.atn&quot; mentioned in step 1.</p>
+<p>In the <strong>Action:</strong> Popup menu select &quot;PowerPoint to Domemaster&quot;. This will tell the droplet to run the custom action that creates a domemaster formatted image when the droplet is started.</p>
+<p>Enable the <strong>Suppress File Open Options Dialogs</strong> and <strong>Suppress Color Profile Warnings</strong> checkboxes so you don't have to click through lots of open dialog messages when you run the droplet.</p>
+<p>Set the Destination to <strong>Save And Close</strong>. This will tell the droplet to save the converted imagery over the original file.</p>
+<p>Click the &quot;OK&quot; button to create the new droplet.</p>
+<p>You now have a custom droplet that was created to match your exact version of Photoshop.</p>
 <hr />
-
-<p>PowerPoint Dome Template Created by Andrew Hazelden. (c) copyright 2013.</p>
-
-<p>Email: <a href="mailto:andrew@andrewhazelden.com">andrew@andrewhazelden.com</a></p>
-
+<p>PowerPoint Dome Template Created by Andrew Hazelden. (c) copyright 2013-2014.</p>
+<p>Email: <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#x61;n&#x64;&#x72;&#x65;&#x77;&#x40;&#97;&#x6e;d&#114;&#x65;&#x77;&#104;&#x61;&#122;&#101;&#x6c;&#x64;&#x65;&#110;&#x2e;&#99;&#x6f;&#109;">&#x61;&#110;&#x64;&#114;&#101;w&#64;a&#110;&#100;&#114;&#101;&#119;&#x68;&#x61;zel&#100;&#x65;&#x6e;&#46;&#99;&#111;&#109;</a></p>
 <p>Blog: <a href="http://www.andrewhazelden.com">http://www.andrewhazelden.com</a></p>
 
 </body>
