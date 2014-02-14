@@ -74,8 +74,19 @@ The droplet starts with the PowerPoint exported slides in either PNG or JPEG for
 After the images are run throught the droplet they are converted to angular fisheye formatted domemaster images.  
 ![The droplet starts with rectangular images.](Notes/Screenshots/droplet_output_domemaster_slides.png)
 
-##Droplet Note:  
+##Droplet Notes:  
 You should always run the droplet on a copy of your PowerPoint images because the droplet works by converting the original images into the domemaster projection and then saves the result by overwriting the original file.
+
+##Mac OS X Compatibility 
+
+If you are running Mac OS X 10.8 or 10.9 you might have issues with Apple's gatekeeper utility blocking the Photoshop droplet from running. You have two solutions to this problem:
+
+**Solution 1:** The easiest fix is to open the System Preferences > Security and Privacy window and enable the Allow apps downloaded from: Anywhere option.
+
+![Apple System Preferences](Notes/Screenshots/disable_gatekeeper_on_mac_os_x.png)
+
+**Solution 2:** The other option is to use the "Create a Droplet" chapter at the end of this article. This process will prepare a Mac formatted droplet locally on your system using your copy of Photoshop. Since your computer created the droplet, Apple's security feature will let the droplet run.
+
 
 #Photoshop Actions Installation
 
