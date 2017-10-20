@@ -77,7 +77,7 @@ After the images are run throught the droplet they are converted to angular fish
 ### Droplet Notes: ###
 You should always run the droplet on a copy of your PowerPoint images because the droplet works by converting the original images into the domemaster projection and then saves the result by overwriting the original file.
 
-##Mac OS X Compatibility 
+### Mac OS X Compatibility  ###
 
 If you are running Mac OS X 10.8 or 10.9 you might have issues with Apple's gatekeeper utility blocking the Photoshop droplet from running. You have two solutions to this problem:
 
@@ -126,7 +126,7 @@ You now have two actions to choose from:
   > PowerPoint to Domemaster  
   > Domemaster to PowerPoint
 
-#Photoshop Action Results
+## Photoshop Action Results ##
 Here are two screenshots that show the results of running the PowerPoint Dome Conversions actions in Photoshop.
 
 PowerPoint Exported Slide:  
