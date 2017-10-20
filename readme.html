@@ -1,13 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<title>readme</title>
+<title>Documentation</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
-/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
-/* Author: Nicolas Hery - http://nicolashery.com */
-/* Version: 29d1c5bc36da364ad5aa86946d420b7bbc54a253 */
-/* Source: https://github.com/nicolahery/markdownpad-github */
+/* Stylesheet for Markdown */
 
 /* RESET
 =============================================================================*/
@@ -21,12 +18,28 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* BODY
 =============================================================================*/
 
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/SourceCodePro-Regular.ttf');
+}
+
+@import url("fonts/font-awesome.min.css");
+
 body {
-  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, arial, sans-serif;
   font-size: 14px;
   line-height: 1.6;
   color: #333;
-  background-color: #fff;
+  background-color: #1C1C1C;
   padding: 20px;
   max-width: 960px;
   margin: 0 auto;
@@ -45,6 +58,8 @@ body>*:last-child {
 
 p, blockquote, ul, ol, dl, table, pre {
   margin: 15px 0;
+  color: #AAAAAA;
+  /* color: #7D8686; */
 }
 
 /* HEADERS
@@ -63,30 +78,42 @@ h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, 
 
 h1 {
   font-size: 28px;
-  color: #000;
+  font-weight: 600;
+  color: #FFFFFF;
 }
 
 h2 {
   font-size: 24px;
-  border-bottom: 1px solid #ccc;
-  color: #000;
+  font-weight: 500;
+  border-bottom: 2px solid #D0D0D0;
+  color: #D0D0D0;
 }
 
 h3 {
   font-size: 18px;
+  font-weight: 400;
+  color: #D0D0D0;
 }
 
 h4 {
   font-size: 16px;
+  color: #D0D0D0;
 }
 
 h5 {
   font-size: 14px;
+  color: #D0D0D0;
 }
 
 h6 {
-  color: #777;
   font-size: 14px;
+  color: #D0D0D0;
+}
+
+h7 {
+  font-size: 14px;
+  color: #D0D0D0;
+  /* color: #277BA5; */
 }
 
 body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
@@ -120,6 +147,7 @@ a:hover {
 
 ul, ol {
   padding-left: 30px;
+  color: #C4C4C4;
 }
 
 ul li > :first-child, 
@@ -177,15 +205,16 @@ dl dd>:last-child {
 
 pre, code, tt {
   font-size: 12px;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 code, tt {
   margin: 0 0px;
   padding: 0px 0px;
   white-space: nowrap;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
+  border: 1px solid #262626;
+  background-color: #363636;
+  color: #D0D0D0;
   border-radius: 3px;
 }
 
@@ -198,8 +227,8 @@ pre>code {
 }
 
 pre {
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
+  background-color: #363636;
+  border: 1px solid #262626;
   font-size: 13px;
   line-height: 19px;
   overflow: auto;
@@ -210,6 +239,24 @@ pre {
 pre code, pre tt {
   background-color: transparent;
   border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Source Sans Pro", Helvetica, arial, sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
 }
 
 /* QUOTES
@@ -251,29 +298,30 @@ table th {
 }
 
 table th, table td {
-  border: 1px solid #ccc;
-  padding: 6px 13px;
+  /* border: 1px solid #ccc; */ 
+  /* padding: 6px 13px; */ 
 }
 
 table tr {
-  border-top: 1px solid #ccc;
-  background-color: #fff;
+  /* border-top: 1px solid #ccc; */
+  /* background-color: #363636; */
+  /* color: #D0D0D0; */
 }
 
-table tr:nth-child(2n) {
-  background-color: #f8f8f8;
-}
 
 /* IMAGES
 =============================================================================*/
 
 img {
-  max-width: 100%
+  max-width: 80%;
+  /* max-width: 100%; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>
 </head>
-<body>
-<h1>PowerPoint Dome Template</h1>
+<body><h1>PowerPoint Dome Template</h1>
 <p><strong>Version 1.1</strong> - Released Feb 13, 2013<br />
 by Andrew Hazelden</p>
 <p><img src="Notes/Screenshots/domemaster_slide.jpg" alt="PowerPoint Dome Template Screenshot" /></p>
@@ -282,21 +330,21 @@ by Andrew Hazelden</p>
 <p>The PowerPoint template file is a 2:1 aspect ratio document that covers a 360 degree x 90 degree field of view. If your dome projection system allows you to display panoramic imagery directly you can use the Powerpoint generated .PNG or .JPG slides without any extra image processing.</p>
 <p>The software is available as a free download. If you find the Dome template useful you are encouraged to consider a small donation to promote further development, and pay bandwidth costs.</p>
 <p><img src="Notes/Screenshots/powerpoint_dome_template_960px.png" alt="PowerPoint Dome Template Screenshot" /></p>
-<h1>Exporting PowerPoint Slides</h1>
+<h2>Exporting PowerPoint Slides</h2>
 <p>You can use PowerPoint to export your presentation to a series of JPG or PNG slides.</p>
-<h2>Step 1. Export the Slides</h2>
+<h3>Step 1. Export the Slides</h3>
 <p>Start by selecting the Export menu item.</p>
-<h2>Step 2. Choose a File Type</h2>
+<h3>Step 2. Choose a File Type</h3>
 <p>Click on the &quot;Change File Type&quot; menu item and select either the PNG or JPEG option.</p>
 <p><img src="Notes/Screenshots/export_png_images_of_the_slides.png" alt="Export the Slides to a file" /></p>
-<h2>Step 3. Save the Slides to a Folder</h2>
+<h3>Step 3. Save the Slides to a Folder</h3>
 <p>Click the Save As button to export your slides. PowerPoint will ask you to select an output directory for the images.</p>
 <p><img src="Notes/Screenshots/save_the_slides_to_a_folder.png" alt="Save the slides to your hard disk" /></p>
-<h2>Step 4. Choose What Slides to Export</h2>
+<h3>Step 4. Choose What Slides to Export</h3>
 <p>To export all of the slides in your presentation choose the &quot;All Slides&quot; button during the save process.</p>
 <p><img src="Notes/Screenshots/export_all_of_the_slides.png" alt="Export All of the Slides" /></p>
 <hr />
-<h1>Maximizing the Export Resolution</h1>
+<h2>Maximizing the Export Resolution</h2>
 <p>It is possible to boost the maximum PowerPoint slide export resolution using the Windows Registry Editor. You can read the guide on the <a href="http://support.microsoft.com/kb/827745?wa=wsignin1.0">Microsoft support site: How to change the resolution of a slide that you export as a picture in PowerPoint</a>.</p>
 <p><img src="Notes/Screenshots/changing_the_export_resolution.png" alt="Boosting the Export Resolution" /></p>
 <h2>PowerPoint Video Export</h2>
@@ -304,46 +352,46 @@ by Andrew Hazelden</p>
 <p>To export your PowerPoint dome presentation to a video file, open the Export screen and choose &quot;Create a Video&quot;. Selecting the &quot;Computer &amp; HD Displays&quot; option will enable the 1440x720p video format.</p>
 <p><img src="Notes/Screenshots/powerpoint_create_video.png" alt="PowerPoint Video Export" /></p>
 <hr />
-<h1>Photoshop Action Installation</h1>
+<h2>Photoshop Action Installation</h2>
 <p>The PowerPoint Dome Template comes with a bonus Photoshop action and droplet program for converting your PowerPoint exported .PNG or .JPG slides into angular fisheye formatted &quot;domemaster&quot; images.</p>
 <p><img src="Notes/Screenshots/photoshop_conversion_tools.png" alt="Photoshop Conversion Tools" /></p>
-<h1>Droplet Usage</h1>
+<h2>Droplet Usage</h2>
 <p>If you have Adobe Photoshop installed on your system you can use the included droplet program called &quot;PowerPoint to Domemaster Convert.exe&quot; that is located in the &quot;Conversion tools&quot; folder. The &quot;PowerPoint to Domemaster Convert.exe&quot; program is run by dragging either a single image or a folder of .PNG or .JPG images onto the program icon. The droplet will start Adobe Photoshop and begin processing the images.</p>
 <p><strong>Droplet Tip:</strong> If you have multiple version of Photoshop installed on your system, it is a good idea to start your preferred version of Photoshop first, before you run the droplet. This will tell the droplet to use the active copy of photoshop to process your fulldome imagery.</p>
 <p>The droplet starts with the PowerPoint exported slides in either PNG or JPEG format.
 <img src="Notes/Screenshots/droplet_input_slides.png" alt="The droplet starts with rectangular images." /></p>
 <p>After the images are run throught the droplet they are converted to angular fisheye formatted domemaster images.<br />
 <img src="Notes/Screenshots/droplet_output_domemaster_slides.png" alt="The droplet starts with rectangular images." /></p>
-<h2>Droplet Notes:</h2>
+<h3>Droplet Notes:</h3>
 <p>You should always run the droplet on a copy of your PowerPoint images because the droplet works by converting the original images into the domemaster projection and then saves the result by overwriting the original file.</p>
-<h2>Mac OS X Compatibility</h2>
+<p>##Mac OS X Compatibility</p>
 <p>If you are running Mac OS X 10.8 or 10.9 you might have issues with Apple's gatekeeper utility blocking the Photoshop droplet from running. You have two solutions to this problem:</p>
 <p><strong>Solution 1:</strong> The easiest fix is to open the System Preferences &gt; Security and Privacy window and enable the Allow apps downloaded from: Anywhere option.</p>
 <p><img src="Notes/Screenshots/disable_gatekeeper_on_mac_os_x.png" alt="Apple System Preferences" /></p>
 <p><strong>Solution 2:</strong> The other option is to use the &quot;Create a Droplet&quot; chapter at the end of this article. This process will prepare a Mac formatted droplet locally on your system using your copy of Photoshop. Since your computer created the droplet, Apple's security feature will let the droplet run.</p>
-<h1>Photoshop Actions Installation</h1>
-<h2>Step 1. Open the Actions Tab</h2>
+<h2>Photoshop Actions Installation</h2>
+<h3>Step 1. Open the Actions Tab</h3>
 <p>Start by opening Adobe Photoshop. Navigate to the &quot;Window&quot; menu, and select the &quot;Actions&quot; menu item.</p>
 <p><img src="Notes/Screenshots/photoshop_actions_menu.png" alt="Open the Actions Tab" /></p>
-<h2>Step 2. Load the actions.</h2>
+<h3>Step 2. Load the actions.</h3>
 <p>Click on the Actions tab pop-up menu located at the top right of the actions tab.</p>
 <p>Select the &quot;Load Actions&quot; menu item to import the actions file.</p>
 <p>In the Load dialogue window open the folder named &quot;Conversion Tools&quot; and select the action files &quot;PowerPoint Dome Conversions.atn&quot;.</p>
 <p>Click the Load button to open the action files. The new action will be loaded into the Actions Tab.</p>
 <p><img src="Notes/Screenshots/photoshop_conversion_actions.png" alt="Conversion Actions" /></p>
-<h2>Step 3. Switch to Button Mode</h2>
+<h3>Step 3. Switch to Button Mode</h3>
 <p>If you want to make it easier to run the actions you can switch the Actions tab to &quot;Button Mode&quot;. This will make each action item a clickable button.</p>
 <p>Click on the actions tab pop-up menu located at the top right of the actions tab.</p>
 <p>Select the first item in the menu labeled &quot;Button Mode&quot;. Your view will switch from a long list into a colourful grid of labeled buttons.</p>
 <p><img src="Notes/Screenshots/photoshop_conversion_actions_as_buttons.png" alt="Photoshop Actions Tab" /></p>
-<p>To make it easier to find things, the &quot;PowerPoint Dome Conversions&quot; actions are coloured blue. </p>
+<p>To make it easier to find things, the &quot;PowerPoint Dome Conversions&quot; actions are coloured blue.</p>
 <p>You now have two actions to choose from:</p>
 <blockquote>
 <p>PowerPoint to Domemaster<br />
 Domemaster to PowerPoint</p>
 </blockquote>
-<h1>Photoshop Action Results</h1>
-<p>Here are two screenshots that show the results of running the PowerPoint Dome Conversions actions in Photoshop.</p>
+<p>#Photoshop Action Results
+Here are two screenshots that show the results of running the PowerPoint Dome Conversions actions in Photoshop.</p>
 <p>PowerPoint Exported Slide:<br />
 <img src="Notes/Screenshots/photoshop_powerpoint_conversion.png" alt="PowerPoint Slide" /></p>
 <p>Domemaster Converted Slide:<br />
@@ -352,9 +400,9 @@ Domemaster to PowerPoint</p>
 <p>The updated PowerPoint Dome Template now includes a Mac CS6, and Windows CS2 and CS6 droplets. Here is a tip on creating your own conversion droplet if you are using a different version of Photoshop.</p>
 <p><strong>Step 1.</strong> Follow the instructions in the &quot;Photoshop Actions Installation&quot; section and load the action file &quot;PowerPoint Dome Conversions.atn&quot; into your copy of Photoshop.</p>
 <p><strong>Step 2.</strong> From the File menu, select Automate &gt; Create Droplet...</p>
-<p><img src="Notes\Screenshots\create-droplet-menu.png" alt="Select the Create Droplet menu item" /></p>
+<p><img src="Notes/Screenshots/create-droplet-menu.png" alt="Select the Create Droplet menu item" /></p>
 <p><strong>Step 3.</strong> The Create Droplet window will open. Click the <strong>Choose...</strong> button to pick a folder location where the droplet will be save. Give the droplet a name like &quot;PowerPoint to Domemaster Convert&quot;.</p>
-<p><img src="Notes\Screenshots\save-droplet.png" alt="Choose the Powerpoint to Dome action" /></p>
+<p><img src="Notes/Screenshots/save-droplet.png" alt="Choose the Powerpoint to Dome action" /></p>
 <p>In the <strong>Play</strong> section of the Create Droplet window open the <strong>Set:</strong> popup menu and chose &quot;PowerPoint Dome Conversions&quot;. This set is only listed here if you installed the actions file &quot;PowerPoint Dome Conversions.atn&quot; mentioned in step 1.</p>
 <p>In the <strong>Action:</strong> Popup menu select &quot;PowerPoint to Domemaster&quot;. This will tell the droplet to run the custom action that creates a domemaster formatted image when the droplet is started.</p>
 <p>Enable the <strong>Suppress File Open Options Dialogs</strong> and <strong>Suppress Color Profile Warnings</strong> checkboxes so you don't have to click through lots of open dialog messages when you run the droplet.</p>
@@ -363,9 +411,7 @@ Domemaster to PowerPoint</p>
 <p>You now have a custom droplet that was created to match your exact version of Photoshop.</p>
 <hr />
 <p>PowerPoint Dome Template Created by Andrew Hazelden. (c) copyright 2013-2014.</p>
-<p>Email: <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#x61;n&#x64;&#x72;&#x65;&#x77;&#x40;&#97;&#x6e;d&#114;&#x65;&#x77;&#104;&#x61;&#122;&#101;&#x6c;&#x64;&#x65;&#110;&#x2e;&#99;&#x6f;&#109;">&#x61;&#110;&#x64;&#114;&#101;w&#64;a&#110;&#100;&#114;&#101;&#119;&#x68;&#x61;zel&#100;&#x65;&#x6e;&#46;&#99;&#111;&#109;</a></p>
+<p>Email: <a href="mailto:andrew@andrewhazelden.com">andrew@andrewhazelden.com</a></p>
 <p>Blog: <a href="http://www.andrewhazelden.com">http://www.andrewhazelden.com</a></p>
-
 </body>
 </html>
-<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
