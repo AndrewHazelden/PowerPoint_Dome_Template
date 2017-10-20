@@ -1,9 +1,10 @@
 # PowerPoint Dome Template #
-**Version 1.1** - Released Feb 13, 2013  
-by Andrew Hazelden
+**Version 1.2** - Released 2017-10-20  
+by Andrew Hazelden  
+Email: [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com)  
+Blog: [http://www.andrewhazelden.com](http://www.andrewhazelden.com)  
 
 ![PowerPoint Dome Template Screenshot](Notes/Screenshots/domemaster_slide.jpg)
-
 
 About the Software
 -----------------
@@ -137,7 +138,7 @@ Domemaster Converted Slide:
 
 ## Creating a Droplet ##
 
-The updated PowerPoint Dome Template now includes a Mac CS6, and Windows CS2 and CS6 droplets. Here is a tip on creating your own conversion droplet if you are using a different version of Photoshop.
+The updated PowerPoint Dome Template now includes a Mac CS6 and CC2018, and Windows CS2 and CS6 droplets. Here is a tip on creating your own conversion droplet if you are using a different version of Photoshop.
 
 **Step 1.** Follow the instructions in the "Photoshop Actions Installation" section and load the action file "PowerPoint Dome Conversions.atn" into your copy of Photoshop.
 
@@ -164,8 +165,5 @@ You now have a custom droplet that was created to match your exact version of Ph
 
 ------------------------------------------------------
 
-PowerPoint Dome Template Created by Andrew Hazelden. (c) copyright 2013-2014.
+PowerPoint Dome Template Created by Andrew Hazelden. (c) Copyright 2013-2017.
 
-Email: [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com)
-
-Blog: [http://www.andrewhazelden.com](http://www.andrewhazelden.com)
