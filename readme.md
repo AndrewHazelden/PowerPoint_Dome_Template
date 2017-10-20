@@ -1,4 +1,4 @@
-#PowerPoint Dome Template
+# PowerPoint Dome Template #
 **Version 1.1** - Released Feb 13, 2013  
 by Andrew Hazelden
 
@@ -16,24 +16,24 @@ The software is available as a free download. If you find the Dome template usef
 ![PowerPoint Dome Template Screenshot](Notes/Screenshots/powerpoint_dome_template_960px.png)
 
 
-#Exporting PowerPoint Slides
+## Exporting PowerPoint Slides ##
 
 You can use PowerPoint to export your presentation to a series of JPG or PNG slides.
 
-##Step 1. Export the Slides
+### Step 1. Export the Slides ###
 Start by selecting the Export menu item.
 
-##Step 2. Choose a File Type
+### Step 2. Choose a File Type ###
 Click on the "Change File Type" menu item and select either the PNG or JPEG option.
 
 ![Export the Slides to a file](Notes/Screenshots/export_png_images_of_the_slides.png)
 
-##Step 3. Save the Slides to a Folder
+### Step 3. Save the Slides to a Folder ###
 Click the Save As button to export your slides. PowerPoint will ask you to select an output directory for the images.
 
 ![Save the slides to your hard disk](Notes/Screenshots/save_the_slides_to_a_folder.png)
 
-##Step 4. Choose What Slides to Export
+### Step 4. Choose What Slides to Export ###
 To export all of the slides in your presentation choose the "All Slides" button during the save process.
 
 ![Export All of the Slides](Notes/Screenshots/export_all_of_the_slides.png)
@@ -41,13 +41,13 @@ To export all of the slides in your presentation choose the "All Slides" button 
 
 -----------------
 
-#Maximizing the Export Resolution
+## Maximizing the Export Resolution ##
 It is possible to boost the maximum PowerPoint slide export resolution using the Windows Registry Editor. You can read the guide on the [Microsoft support site: How to change the resolution of a slide that you export as a picture in PowerPoint](http://support.microsoft.com/kb/827745?wa=wsignin1.0).
 
 ![Boosting the Export Resolution](Notes/Screenshots/changing_the_export_resolution.png)
 
 
-##PowerPoint Video Export 
+## PowerPoint Video Export ##
 Microsoft's PowerPoint 2013 software allows you to export your presentation to a 1440x720 resolution MPEG4 video file. The PowerPoint video export feature can export your PowerPoint shows to a video file with custom slide timing, animated transitions, and audio narrations.
 
 To export your PowerPoint dome presentation to a video file, open the Export screen and choose "Create a Video". Selecting the "Computer & HD Displays" option will enable the 1440x720p video format.
@@ -56,13 +56,13 @@ To export your PowerPoint dome presentation to a video file, open the Export scr
 
 -----------------
 
-#Photoshop Action Installation
+## Photoshop Action Installation ##
 
 The PowerPoint Dome Template comes with a bonus Photoshop action and droplet program for converting your PowerPoint exported .PNG or .JPG slides into angular fisheye formatted "domemaster" images.
 
 ![Photoshop Conversion Tools](Notes/Screenshots/photoshop_conversion_tools.png)
 
-#Droplet Usage
+## Droplet Usage ##
 
 If you have Adobe Photoshop installed on your system you can use the included droplet program called "PowerPoint to Domemaster Convert.exe" that is located in the "Conversion tools" folder. The "PowerPoint to Domemaster Convert.exe" program is run by dragging either a single image or a folder of .PNG or .JPG images onto the program icon. The droplet will start Adobe Photoshop and begin processing the images.
 
@@ -74,7 +74,7 @@ The droplet starts with the PowerPoint exported slides in either PNG or JPEG for
 After the images are run throught the droplet they are converted to angular fisheye formatted domemaster images.  
 ![The droplet starts with rectangular images.](Notes/Screenshots/droplet_output_domemaster_slides.png)
 
-##Droplet Notes:  
+### Droplet Notes: ###
 You should always run the droplet on a copy of your PowerPoint images because the droplet works by converting the original images into the domemaster projection and then saves the result by overwriting the original file.
 
 ##Mac OS X Compatibility 
@@ -88,16 +88,16 @@ If you are running Mac OS X 10.8 or 10.9 you might have issues with Apple's gate
 **Solution 2:** The other option is to use the "Create a Droplet" chapter at the end of this article. This process will prepare a Mac formatted droplet locally on your system using your copy of Photoshop. Since your computer created the droplet, Apple's security feature will let the droplet run.
 
 
-#Photoshop Actions Installation
+## Photoshop Actions Installation ##
 
-##Step 1. Open the Actions Tab
+### Step 1. Open the Actions Tab ###
 
 Start by opening Adobe Photoshop. Navigate to the "Window" menu, and select the "Actions" menu item.
 
 
 ![Open the Actions Tab](Notes/Screenshots/photoshop_actions_menu.png)
 
-##Step 2. Load the actions.
+### Step 2. Load the actions. ###
 
 Click on the Actions tab pop-up menu located at the top right of the actions tab.
 
@@ -109,7 +109,7 @@ Click the Load button to open the action files. The new action will be loaded in
 
 ![Conversion Actions](Notes/Screenshots/photoshop_conversion_actions.png)
 
-##Step 3. Switch to Button Mode
+### Step 3. Switch to Button Mode ###
 
 If you want to make it easier to run the actions you can switch the Actions tab to "Button Mode". This will make each action item a clickable button.
 
@@ -143,11 +143,11 @@ The updated PowerPoint Dome Template now includes a Mac CS6, and Windows CS2 and
 
 **Step 2.** From the File menu, select Automate > Create Droplet...
 
-![Select the Create Droplet menu item](Notes\Screenshots\create-droplet-menu.png)
+![Select the Create Droplet menu item](Notes/Screenshots/create-droplet-menu.png)
 
 **Step 3.** The Create Droplet window will open. Click the **Choose...** button to pick a folder location where the droplet will be save. Give the droplet a name like "PowerPoint to Domemaster Convert".
 
-![Choose the Powerpoint to Dome action](Notes\Screenshots\save-droplet.png)
+![Choose the Powerpoint to Dome action](Notes/Screenshots/save-droplet.png)
 
 In the **Play** section of the Create Droplet window open the **Set:** popup menu and chose "PowerPoint Dome Conversions". This set is only listed here if you installed the actions file "PowerPoint Dome Conversions.atn" mentioned in step 1.
 
